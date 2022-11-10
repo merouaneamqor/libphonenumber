@@ -23,7 +23,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project (libphonenumber)
 set (libphonenumber_VERSION_MAJOR 8)
-set (libphonenumber_VERSION_MINOR 12)
+set (libphonenumber_VERSION_MINOR 13)
 set (libphonenumber_VERSION_PATCH 0)
 
 if (32BIT)
@@ -358,7 +358,7 @@ add_metadata_gen_target (
   ${TEST_METADATA_TARGET}
   "${RESOURCES_DIR}/PhoneNumberMetadataForTesting.xml"
   "test_metadata"
-  "metadata"
+  "test_metadata"
 )
 list (APPEND TESTING_LIBRARY_SOURCES "src/phonenumbers/test_metadata.cc")
 
